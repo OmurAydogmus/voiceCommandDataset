@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Aug 13 11:52:41 2022
-
-@author: oaydogmus
+Created on Wed Aug 30 15:20:13 2023
+@author: omur aydogmus
 """
-
+ 
 import os  
 import pyttsx3
  
@@ -62,13 +61,13 @@ def genS(tx,nr,sy,rt,gr,ph,ss,per):
          
     engine.say(f'<pitch middle="{ph}">{text[sy]}!</pitch>')
     folderInx = int(nr+10*tx+(int(per>0)*10*(per-25)/25))
-    folder = f'F:\speechRecognize\\fullData\\wav\\case{folderInx}'
+    folder = f'D:\\Works_new\\PLCSound\\fullData\\wav\\case{folderInx}'
     isExist = os.path.exists(folder)
     if isExist==False:
         os.mkdir(folder)
     print(f'{text[sy]}')  
-    engine.save_to_file('deneme.wav') 
-    # engine.save_to_file(f'<pitch middle="{ph}">{text[sy]}!</pitch>', f'{folder}\\{folderInx}_{ss}.wav') 
+    # engine.save_to_file('deneme.wav') 
+    engine.save_to_file(f'<pitch middle="{ph}">{text[sy]}!</pitch>', f'{folder}\\{folderInx}_{ss}.wav') 
     engine.runAndWait()
     engine.stop()
     
@@ -76,9 +75,9 @@ for tx in range(2):
     for nr in range(1,11):  
         ss = 0
         for sy in range(6):
-            for rt in range(100,175,25):
+            for rt in range(80,140,20):
                 for gr in range(2):
-                    for ph in range(-10,15,5):
+                    for ph in range(-8,11,4):
                         ss += 1  
                         genS(tx,nr,sy,rt,gr,ph,ss,0) 
                         # print(f'{ss}______N{nr}_T{tx}_S{sy}_R{rt}_G{gr}_P{ph}')         
@@ -88,9 +87,32 @@ for per in range(25,125,25):
     for nr in range(1,11):  
         ss = 0
         for sy in range(6):
-            for rt in range(100,175,25):
+            for rt in range(80,140,20):
                 for gr in range(2):
-                    for ph in range(-10,15,5):
+                    for ph in range(-8,11,4):
                         ss += 1  
                         genS(tx,nr,sy,rt,gr,ph,ss,per) 
                     # print(f'{ss}______N{nr}_T{tx}_S{sy}_R{rt}_G{gr}_P{ph}') 
+    
+# for tx in range(2):
+#     for nr in range(1,11):  
+#         ss = 0
+#         for sy in range(6):
+#             for rt in range(100,175,25):
+#                 for gr in range(2):
+#                     for ph in range(-10,15,5):
+#                         ss += 1  
+#                         genS(tx,nr,sy,rt,gr,ph,ss,0) 
+#                         # print(f'{ss}______N{nr}_T{tx}_S{sy}_R{rt}_G{gr}_P{ph}')         
+         
+# tx = 2
+# for per in range(25,125,25):  
+#     for nr in range(1,11):  
+#         ss = 0
+#         for sy in range(6):
+#             for rt in range(100,175,25):
+#                 for gr in range(2):
+#                     for ph in range(-10,15,5):
+#                         ss += 1  
+#                         genS(tx,nr,sy,rt,gr,ph,ss,per) 
+#                     # print(f'{ss}______N{nr}_T{tx}_S{sy}_R{rt}_G{gr}_P{ph}') 
