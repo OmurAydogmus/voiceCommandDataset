@@ -1,0 +1,29 @@
+ 
++++++++++++++++ bibtex +++++++++++++++
+@article{AYDOGMUS2023107120,
+title = {An automated voice command classification model based on an attention-deep convolutional neural network for industrial automation system},
+journal = {Engineering Applications of Artificial Intelligence},
+volume = {126},
+pages = {107120},
+year = {2023},
+issn = {0952-1976},
+doi = {https://doi.org/10.1016/j.engappai.2023.107120},
+url = {https://www.sciencedirect.com/science/article/pii/S0952197623013040},
+author = {Omur Aydogmus and Mustafa Can Bingol and Gullu Boztas and Turker Tuncer},
+keywords = {Deep feature extraction, Industrial automation, Programmable logic controller, SCADA, Speech recognition},
+abstract = {In this research, a method was developed for utilizing voice commands with programmable logic controllers (PLCs) and supervisory control and data acquisition (SCADA) systems, which are commonly utilized in industrial automation. This approach incorporates artificial intelligence to enable human–machine interaction, aligning with the trends of Industry 4.0. A deep neural network was specifically designed for speech recognition, eliminating the need for reliance on any pre-existing speech-to-text engines. The objective was to create a model that is accurate and compact in size, making it suitable for embedded systems within industrial systems. To train the deep learning network, 21,600 sound files were generated. These files combined real factory noise with a synthetic dataset of human speech, forming a dataset comprising 60 different classes of voice commands. These commands encompassed actions like starting, stopping, and operating at various speeds for 10 motors controlled by the automation system. After applying the Mel-frequency cepstral coefficient (MFCC) to the voice commands, the resulting data was directly fed into the proposed network. The network achieved an impressive accuracy rate of 99.73%. Notably, the proposed network outperformed even networks several times its size.}
+}
+
+ 
++++++++++++++++ text +++++++++++++++
+Omur Aydogmus, Mustafa Can Bingol, Gullu Boztas, Turker Tuncer,
+An automated voice command classification model based on an attention-deep convolutional neural network for industrial automation system,
+Engineering Applications of Artificial Intelligence,
+Volume 126, Part D,
+2023,
+107120,
+ISSN 0952-1976,
+https://doi.org/10.1016/j.engappai.2023.107120.
+(https://www.sciencedirect.com/science/article/pii/S0952197623013040)
+Abstract: In this research, a method was developed for utilizing voice commands with programmable logic controllers (PLCs) and supervisory control and data acquisition (SCADA) systems, which are commonly utilized in industrial automation. This approach incorporates artificial intelligence to enable human–machine interaction, aligning with the trends of Industry 4.0. A deep neural network was specifically designed for speech recognition, eliminating the need for reliance on any pre-existing speech-to-text engines. The objective was to create a model that is accurate and compact in size, making it suitable for embedded systems within industrial systems. To train the deep learning network, 21,600 sound files were generated. These files combined real factory noise with a synthetic dataset of human speech, forming a dataset comprising 60 different classes of voice commands. These commands encompassed actions like starting, stopping, and operating at various speeds for 10 motors controlled by the automation system. After applying the Mel-frequency cepstral coefficient (MFCC) to the voice commands, the resulting data was directly fed into the proposed network. The network achieved an impressive accuracy rate of 99.73%. Notably, the proposed network outperformed even networks several times its size.
+Keywords: Deep feature extraction; Industrial automation; Programmable logic controller; SCADA; Speech recognition
